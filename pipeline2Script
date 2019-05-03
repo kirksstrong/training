@@ -3,7 +3,7 @@ node {
         sh 'touch myfile'
     }
     stage('Write File') {
-        sh 'echo hello world > myfile'
+        sh 'echo hello world >> myfile'
     }
     stage('Print File') {
         sh 'cat myfile'
